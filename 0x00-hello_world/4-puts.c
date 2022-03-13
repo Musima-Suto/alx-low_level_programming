@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <string.h>
-
 /**
- *main - mai block 
+ *main- main block
+ *
  *Return:0
  */
-
 int main(void)
-{
-	char string[70];
-	strcpy(string, "\"Programming is like building a multilingual puzzle");
+{	char string[70];
+	strcpy(string, "\"Programming is like building a multilingual puzzle\n");
 	puts(string);
-	return (0);	
+
+	return (0);
+
 }
