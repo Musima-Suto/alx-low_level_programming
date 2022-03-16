@@ -6,9 +6,9 @@
  */
 int _islower(int c)
 {
-	int r = 'c';
+	int r = ' ';
 
-	if (islower(r))
+	if ( islower(r))
 	{
 		return (1);
 	}
