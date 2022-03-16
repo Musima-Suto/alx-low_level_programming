@@ -6,9 +6,16 @@
  */
 void print_to_98(int n)
 {
-	while (n <= 98)
+	if (n <= 98)
 	{
-		printf("%d ", n);
-		n++;
+		for (n = n; n < 98; n++)
+			printf("%d, ", n);
+		printf("5d\n", 98);
+	}
+	else
+	{
+		for (n = n; n > 98; n--)
+			printf("%d,", n);
+		printf("%d\n", 98);
 	}
 }
