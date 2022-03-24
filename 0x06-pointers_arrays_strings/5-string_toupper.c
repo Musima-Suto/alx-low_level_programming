@@ -6,17 +6,16 @@
  *@n: address of string 
  * Return: converted string.
  */
-
-char *string_toupper(char *n)
+char *string_toupper(char *c)
 {
 	int i;
 
 	i = 0;
-	while (n[i] != '\0')
+	while (c[i] != '\0')
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
-			n[i] -= 'a' - 'A';
+		if (c[i] >= 'a' && c[i] <= 'z')
+			c[i] -= 'a' - 'A';
 		i++;
 	}
-	return (n);
+	return (c);
 }
