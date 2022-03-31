@@ -1,5 +1,5 @@
 
-#include "holberton.h"
+#include "main.h"
 
 /**
  * find_sqrt - Finds the natural square root of an inputted number.
