@@ -5,7 +5,7 @@
  *and intialize it with a specific char
  *@size: size of the array
  *@c: character intialized to the array
- *Return: NULL if not successful, else 
+ *Return: NULL if not successful, else
  *        Pointer
  */
 char *create_array(unsigned int size, char c)
@@ -15,7 +15,7 @@ char *create_array(unsigned int size, char c)
 
 	ptr = malloc(sizeof(c) * size);
 
-	if (size = 0 || ptr = 0)
+	if (size == 0 || ptr == 0)
 		return (NULL);
 	for (i = 0; i < size; i++)
 		ptr[i] = c;
