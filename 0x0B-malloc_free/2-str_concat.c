@@ -2,11 +2,11 @@
 #include <stdlib.h>
 
 /**
- * _strdup - returns a pointer to a newly allocated space in memory,
- *           which contains a copy of the string
- * @str: string to be duplicated
+ * _strdup - concatenates two strings
+ * @s1: original string
+ * @s2: string to be added
  * Return: Null if fail
- *         Pointer if successful
+ *         else pointer to concatenated string
  */
 
 char *str_concat(char *s1, char *s2)
