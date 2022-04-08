@@ -9,15 +9,23 @@
  *        Pointer
  */
 char *create_array(unsigned int size, char c)
+
 {
-	char *ptr;
-	unsigned int i;
+	char *s;
+	unsigned int i = 0;
 
-	ptr = malloc(sizeof(char) * size);
+	s = malloc(size * sizeof(char));
 
-	if (!size || !ptr)
+	if (s == NULL)
 		return (NULL);
-	for (i = 0; i < size; i++)
-		ptr[i] = c;
-	return (ptr);
+
+	if (size == 0)
+		return (NULL);
+
+	while (i < size)
+	{
+		s[i] = c;
+		i++;
+	}
+	return (s);
 }
