@@ -5,7 +5,6 @@
  *@name: name of the dog
  *@age: age of the dog
  *@owner: name of the owner
- *Return:nothing
  *Description: longer version
  */
 typedef struct dog
