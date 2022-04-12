@@ -9,7 +9,7 @@
  */
 typedef struct dog
 {
-        char *name[50];
+        char *name;
         float age;
         char *owner;
 } dog_info;
