@@ -1,21 +1,18 @@
-#include "lists.h"
+/*
+ * File: 100-first.c
+ * Author: Ukonu Divine Chisom
+ */
+
+#include <stdio.h>
+
+void __attribute__((constructor)) hare(void);
 
 /**
- * list_len - Finds the number of elements in
- *            a linked list_t list.
- * @h: The linked list_t list.
- *
- * Return: The number of elements in h.
+ * hare - Prints a string before the
+ *        main function is executed.
  */
-size_t list_len(const list_t *h)
+void hare(void)
 {
-	size_t elements = 0;
-
-	while (h)
-	{
-		elements++;
-		h = h->next;
-	}
-
-	return (elements);
+	printf("You're beat! and yet, you must allow,\n"
+	       "I bore my house upon my back!\n");
 }
